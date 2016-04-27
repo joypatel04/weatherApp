@@ -1,0 +1,8 @@
+<div class="panel panel-dafult">
+    <div class="=panel-heading">
+        <h3 class="panel-title">{{convertDate({ date: weatherDay.dt}) | date : dateFormat }}</h3>
+    </div>
+    <div class="panel-body">
+        Daytime temperature: {{ convertFahrenheit({daytimeTemp: weatherDay.temp.day}) }}
+    </div>
+</div>
